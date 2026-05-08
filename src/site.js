@@ -8,8 +8,9 @@ const content = {
     nav: ["经历", "项目", "证书", "奖项", "联系"],
     resumeButton: "中文简历",
     languageButton: "EN",
-    heroName: "余智秋",
-    heroTitle: "国际商业运营 / 国际化增长 / AI 赋能商业分析",
+    heroName: "国际商业运营，AI 赋能增长",
+    heroLines: ["国际商业运营，", "AI 赋能增长"],
+    heroTitle: "余智秋｜国际化增长 / 商业分析 / 运营支持",
     heroIntro:
       "电子科学与技术本科，曾赴芬兰商学院公费交换；在 SMM、金虹桥商场、ING Bank 上海分行承担海外市场、CRM 运营分析与运营支持工作，具备英文商务沟通、客户线索整理、经营数据处理、流程文档支持和 AI 工具应用经验。",
     heroActions: ["查看项目", "联系我"],
@@ -110,8 +111,9 @@ const content = {
     nav: ["Experience", "Projects", "Certificates", "Awards", "Contact"],
     resumeButton: "English CV",
     languageButton: "中文",
-    heroName: "Yu Zhiqiu",
-    heroTitle: "International Business Operations / Global Growth / AI-enabled Business Analytics",
+    heroName: "Global operations, AI-enabled growth",
+    heroLines: ["Global operations,", "AI-enabled growth"],
+    heroTitle: "Yu Zhiqiu | International Business Operations / Business Analytics / Operations Support",
     heroIntro:
       "Electronic Science and Technology undergraduate with a government-funded business-school exchange in Finland. Experience spans overseas marketing at SMM, CRM operations analytics at King Parkview, and operations support at ING Bank Shanghai Branch, with strengths in English business communication, lead organization, operating data processing, process documentation, and AI tool application.",
     heroActions: ["View Projects", "Contact Me"],
@@ -527,7 +529,14 @@ function updateHeader(t) {
 }
 
 function updateHero(t) {
-  text(".hero-copy h1", t.heroName);
+  const heroLines = document.querySelectorAll(".hero-copy h1 .hero-line");
+  if (heroLines.length && t.heroLines) {
+    heroLines.forEach((line, index) => {
+      line.textContent = t.heroLines[index] || "";
+    });
+  } else {
+    text(".hero-copy h1", t.heroName);
+  }
   text(".hero-title", t.heroTitle);
   text(".hero-intro", t.heroIntro);
 
@@ -537,7 +546,6 @@ function updateHero(t) {
   document.querySelectorAll(".contact-grid span").forEach((element, index) => {
     inlineLabel(element, t.contact[index]);
   });
-  listText(".visual-label", t.visualLabels);
 
   document.querySelectorAll(".signal-card").forEach((card, index) => {
     const [value, label, detail] = t.signals[index];
