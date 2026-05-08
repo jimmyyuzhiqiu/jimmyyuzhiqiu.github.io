@@ -11,7 +11,7 @@ const content = {
     heroName: "余智秋",
     heroTitle: "国际商业运营 / 国际化增长 / AI 赋能商业分析",
     heroIntro:
-      "具备芬兰商学院交换、SMM 海外市场增长、金虹桥 CRM 经营分析、ING 国际银行流程支持经历。能够把海外客户线索、英文商务触达、业务指标和数据 / AI 自动化工具连接起来，支持客户分层、增长复盘、流程提效、商业化表达和跨团队交付。",
+      "电子科学与技术本科，曾赴芬兰商学院公费交换；在 SMM、金虹桥商场、ING Bank 上海分行承担海外市场、CRM 运营分析与运营支持工作，具备英文商务沟通、客户线索整理、经营数据处理、流程文档支持和 AI 工具应用经验。",
     heroActions: ["查看项目", "联系我"],
     contact: [
       "意向城市：杭州、上海",
@@ -27,23 +27,11 @@ const content = {
       ["500+", "AIGC 片头生成", "内容工作流效率提升约 83%"],
     ],
     sections: {
-      education: [
-        "教育背景",
-        "国际商业方向的底层能力来自商科交换、英文环境适应和工程技术训练的交叉背景。",
-      ],
-      experience: [
-        "实习经历",
-        "把海外客户、经营数据和高规范流程放在同一条业务链路里呈现，重点突出可交付、可复盘、可协作。",
-      ],
-      projects: [
-        "项目作品集",
-        "项目不是按技术堆叠展示，而是按商业场景解释：客户触达、CRM 复盘、流程自动化、AIGC 内容生产和竞赛级交付。",
-      ],
-      certificates: [
-        "竞赛证书",
-        "把关键竞赛奖状和项目证明集中展示，作为奖项真实性、技术理解和作品交付能力的直接证据。",
-      ],
-      awards: ["竞赛奖项", "奖项作为技术理解和作品交付能力的背书保留，但不把算法工程作为主叙事。"],
+      education: ["教育背景", ""],
+      experience: ["实习经历", ""],
+      projects: ["项目作品集", ""],
+      certificates: ["竞赛证书", ""],
+      awards: ["竞赛奖项", ""],
     },
     education: [
       {
@@ -125,7 +113,7 @@ const content = {
     heroName: "Yu Zhiqiu",
     heroTitle: "International Business Operations / Global Growth / AI-enabled Business Analytics",
     heroIntro:
-      "International business operations candidate with a Finland business-school exchange, overseas marketing at SMM, CRM analytics at King Parkview, and process support experience at ING Bank. I connect overseas leads, English business communication, operating metrics, and AI / automation tools to support segmentation, growth review, workflow efficiency, commercial storytelling, and cross-team delivery.",
+      "Electronic Science and Technology undergraduate with a government-funded business-school exchange in Finland. Experience spans overseas marketing at SMM, CRM operations analytics at King Parkview, and operations support at ING Bank Shanghai Branch, with strengths in English business communication, lead organization, operating data processing, process documentation, and AI tool application.",
     heroActions: ["View Projects", "Contact Me"],
     contact: [
       "Target locations: Hangzhou, Shanghai",
@@ -141,26 +129,11 @@ const content = {
       ["500+", "AIGC opening clips", "Content workflow efficiency up about 83%"],
     ],
     sections: {
-      education: [
-        "Education",
-        "A cross-disciplinary foundation built from business exchange studies, English-language collaboration, and engineering training.",
-      ],
-      experience: [
-        "Experience",
-        "A practical operating chain across overseas customers, business data, and high-standard financial workflows.",
-      ],
-      projects: [
-        "Project Portfolio",
-        "Projects are framed by business scenarios: lead generation, CRM review, process automation, AIGC content production, and competition-grade delivery.",
-      ],
-      certificates: [
-        "Certificates",
-        "Selected award certificates and project proofs are shown as direct evidence of award authenticity, technical literacy, and delivery capability.",
-      ],
-      awards: [
-        "Awards",
-        "Awards are kept as evidence of technical understanding and project delivery, without making algorithm engineering the main narrative.",
-      ],
+      education: ["Education", ""],
+      experience: ["Experience", ""],
+      projects: ["Project Portfolio", ""],
+      certificates: ["Certificates", ""],
+      awards: ["Awards", ""],
     },
     education: [
       {
@@ -577,8 +550,15 @@ function updateHero(t) {
 function updateSectionIntro(section, values) {
   const element = document.querySelector(section);
   if (!element) return;
-  element.querySelector("h2").textContent = values[0];
-  element.querySelector("p").textContent = values[1];
+  const heading = element.querySelector("h2");
+  const paragraph = element.querySelector("p");
+  const intro = values[1] || "";
+  heading.textContent = values[0];
+  if (paragraph) {
+    paragraph.textContent = intro;
+    paragraph.hidden = intro.length === 0;
+  }
+  element.classList.toggle("section-intro-title-only", intro.length === 0);
 }
 
 function updateEducation(t) {
