@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.56" stop-color="#f7faf8"/>
+      <stop offset="1" stop-color="#ecf3ef"/>
+    </linearGradient>
+    <linearGradient id="jade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b6a52"/>
+      <stop offset="1" stop-color="#7a9b72"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#1c2a25" flood-opacity="0.18"/>
+    </filter>
+    <filter id="fineShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#26332e" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#dce5df" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="1000" rx="28" fill="url(#paper)"/>
+  <rect x="42" y="42" width="1316" height="916" rx="20" fill="url(#grid)" opacity="0.65"/>
+  <path d="M164 700 C264 520 395 568 497 415 C609 248 740 306 842 210 C956 104 1112 178 1232 108" fill="none" stroke="#0b6a52" stroke-width="7" stroke-linecap="round" stroke-opacity="0.86"/>
+  <path d="M164 700 C264 520 395 568 497 415 C609 248 740 306 842 210 C956 104 1112 178 1232 108" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="2 18" stroke-linecap="round" stroke-opacity="0.95"/>
+  <path d="M202 328 C320 360 376 252 520 278 C682 307 712 470 894 446 C1040 426 1091 548 1240 504" fill="none" stroke="#87938e" stroke-width="2" stroke-dasharray="8 16" opacity="0.72"/>
+  <g filter="url(#fineShadow)">
+    <rect x="104" y="584" width="240" height="142" rx="12" fill="#ffffff"/>
+    <rect x="126" y="612" width="118" height="13" rx="6" fill="#16211d"/>
+    <rect x="126" y="642" width="176" height="8" rx="4" fill="#a1aea8"/>
+    <rect x="126" y="664" width="150" height="8" rx="4" fill="#d0d9d4"/>
+    <rect x="126" y="691" width="64" height="15" rx="7" fill="#0b6a52"/>
+    <text x="213" y="704" font-family="Arial, sans-serif" font-size="18" fill="#31433d">SMM Leads</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="430" y="286" width="360" height="260" rx="18" fill="#ffffff"/>
+    <rect x="456" y="316" width="308" height="36" rx="10" fill="#16211d"/>
+    <rect x="456" y="378" width="128" height="96" rx="10" fill="#edf3f0"/>
+    <rect x="610" y="378" width="154" height="96" rx="10" fill="#eef4f1"/>
+    <path d="M474 452 L502 426 L533 436 L566 400" fill="none" stroke="#0b6a52" stroke-width="5" stroke-linecap="round"/>
+    <rect x="632" y="404" width="40" height="46" rx="4" fill="#0b6a52" opacity="0.88"/>
+    <rect x="684" y="390" width="40" height="60" rx="4" fill="#7a9b72" opacity="0.88"/>
+    <rect x="736" y="420" width="14" height="30" rx="4" fill="#c3cdc7"/>
+    <rect x="456" y="498" width="212" height="10" rx="5" fill="#cad5d0"/>
+    <rect x="456" y="522" width="172" height="10" rx="5" fill="#e2e9e5"/>
+    <text x="476" y="340" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">CRM Growth Review</text>
+  </g>
+  <g filter="url(#fineShadow)">
+    <rect x="790" y="126" width="292" height="172" rx="14" fill="#ffffff"/>
+    <rect x="818" y="156" width="94" height="12" rx="6" fill="#16211d"/>
+    <rect x="818" y="188" width="226" height="9" rx="4" fill="#c5d0ca"/>
+    <rect x="818" y="214" width="184" height="9" rx="4" fill="#dfe7e3"/>
+    <rect x="818" y="246" width="56" height="20" rx="10" fill="#0b6a52"/>
+    <text x="892" y="263" font-family="Arial, sans-serif" font-size="18" fill="#364842">ING Review</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="904" y="470" width="346" height="260" rx="18" fill="#16211d"/>
+    <rect x="930" y="500" width="294" height="48" rx="12" fill="#26332e"/>
+    <rect x="930" y="574" width="132" height="106" rx="12" fill="#f7faf8"/>
+    <rect x="1088" y="574" width="136" height="106" rx="12" fill="#f7faf8"/>
+    <path d="M958 640 C996 592 1026 626 1044 598" fill="none" stroke="#0b6a52" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1112" y="604" width="20" height="48" rx="5" fill="#0b6a52"/>
+    <rect x="1146" y="620" width="20" height="32" rx="5" fill="#7a9b72"/>
+    <rect x="1180" y="590" width="20" height="62" rx="5" fill="#d7e0dc"/>
+    <text x="958" y="531" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">AI Business Site</text>
+  </g>
+  <g>
+    <circle cx="164" cy="700" r="16" fill="#0b6a52"/>
+    <circle cx="497" cy="415" r="16" fill="#0b6a52"/>
+    <circle cx="842" cy="210" r="16" fill="#0b6a52"/>
+    <circle cx="1232" cy="108" r="16" fill="#0b6a52"/>
+    <circle cx="164" cy="700" r="30" fill="none" stroke="#0b6a52" stroke-width="2" opacity="0.35"/>
+    <circle cx="497" cy="415" r="30" fill="none" stroke="#0b6a52" stroke-width="2" opacity="0.35"/>
+    <circle cx="842" cy="210" r="30" fill="none" stroke="#0b6a52" stroke-width="2" opacity="0.35"/>
+    <circle cx="1232" cy="108" r="30" fill="none" stroke="#0b6a52" stroke-width="2" opacity="0.35"/>
+  </g>
+  <g opacity="0.75">
+    <text x="104" y="110" font-family="Arial, sans-serif" font-size="22" fill="#16211d">International Operations Map</text>
+    <text x="104" y="146" font-family="Arial, sans-serif" font-size="16" fill="#5e6b65">Lead data · CRM analytics · AI workflow · business presentation</text>
+  </g>
+</svg>
