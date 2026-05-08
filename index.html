@@ -24,15 +24,19 @@
       <nav class="nav-links" aria-label="页面导航">
         <a href="#experience">经历</a>
         <a href="#projects">项目</a>
+        <a href="#certificates">证书</a>
         <a href="#awards">奖项</a>
         <a href="#contact">联系</a>
       </nav>
-      <a class="header-action" href="./public/resume-cn.pdf" download>
-        <svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
-        </svg>
-        中文简历
-      </a>
+      <div class="header-controls">
+        <button class="lang-toggle" type="button" aria-label="Switch language">EN</button>
+        <a class="header-action" href="./public/resume-cn.pdf" download>
+          <svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
+          </svg>
+          中文简历
+        </a>
+      </div>
     </header>
 
     <main>
@@ -330,6 +334,14 @@
         </div>
       </section>
 
+      <section class="page-section certificates-section" id="certificates">
+        <div class="section-intro reveal">
+          <h2>竞赛证书</h2>
+          <p>把关键竞赛奖状和项目证明集中展示，作为奖项真实性、技术理解和作品交付能力的直接证据。</p>
+        </div>
+        <div class="certificate-grid" id="certificate-grid"></div>
+      </section>
+
       <section class="page-section awards-section" id="awards">
         <div class="section-intro reveal">
           <h2>竞赛奖项</h2>
@@ -396,6 +408,18 @@
         </a>
       </div>
     </footer>
+
+    <div class="certificate-modal" id="certificate-modal" aria-hidden="true">
+      <button class="modal-backdrop" type="button" aria-label="关闭证书预览"></button>
+      <figure class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="关闭证书预览">×</button>
+        <img id="modal-image" src="" alt="" />
+        <figcaption>
+          <strong id="modal-title"></strong>
+          <span id="modal-meta"></span>
+        </figcaption>
+      </figure>
+    </div>
 
     <script src="./src/site.js"></script>
   </body>
