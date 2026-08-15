@@ -1,0 +1,3 @@
+Canonical ZIP size: 4785 bytes
+Canonical SHA256: 85df1a73f9d337a8da365089a27d972fba2fcb91877509bbedf0092b3304d165
+Published as a binary blob; do not use the older 787c9c... path.
