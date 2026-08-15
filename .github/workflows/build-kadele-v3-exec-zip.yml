@@ -1,0 +1,58 @@
+name: Build Kadele V3 exec zip
+
+on:
+  push:
+    paths:
+      - 'tmp/kadele-v3-20260815-7c142970/build-zip.trigger'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebuild package files from self-contained Markdown
+        run: |
+          python3 - <<'PY'
+          import re, pathlib, shutil
+          base = pathlib.Path('tmp/kadele-v3-20260815-7c142970')
+          src = base / 'Kadele_EvoMind_V3_SELF_CONTAINED_20260815.md'
+          text = src.read_text(encoding='utf-8')
+          out = base / 'Kadele_EvoMind_V3_EXEC_PACKAGE_20260815'
+          if out.exists(): shutil.rmtree(out)
+          out.mkdir(parents=True)
+          pat = re.compile(r'^===== BEGIN FILE: (.+?) =====\n(.*?)^===== END FILE: \\1 =====\s*$', re.M | re.S)
+          count = 0
+          for m in pat.finditer(text):
+              rel = pathlib.Path(m.group(1).strip())
+              p = out / rel
+              p.parent.mkdir(parents=True, exist_ok=True)
+              p.write_text(m.group(2).rstrip() + '\n', encoding='utf-8')
+              count += 1
+          shutil.copy2(src, out / src.name)
+          b = base / 'bootstrap.sh'
+          if b.exists(): shutil.copy2(b, out / b.name)
+          (out / 'PUBLIC_PACKAGE_NOTE.txt').write_text(
+              'This public execution package contains all V3 Markdown/CSV execution materials reconstructed from the self-contained source.\n'
+              'It intentionally does not include the large V2 PPTX binary source. Rebuild/modify PPT according to 20_PPT修改提示词_V3.md.\n'
+              f'Reconstructed files: {count}\n', encoding='utf-8')
+          print('reconstructed', count, 'files')
+          PY
+      - name: Create zip
+        run: |
+          cd tmp/kadele-v3-20260815-7c142970
+          rm -f Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip
+          zip -qr Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip Kadele_EvoMind_V3_EXEC_PACKAGE_20260815
+          sha256sum Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip > Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip.sha256
+      - name: Commit generated package
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add tmp/kadele-v3-20260815-7c142970/Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip tmp/kadele-v3-20260815-7c142970/Kadele_EvoMind_V3_EXEC_PACKAGE_20260815.zip.sha256
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Build Kadele V3 public execution zip'
+          git push
