@@ -1,0 +1,1 @@
+Old published ZIP at commit 787c9c... is invalid and must not be used. This fixed directory is authoritative after binary upload verification.
