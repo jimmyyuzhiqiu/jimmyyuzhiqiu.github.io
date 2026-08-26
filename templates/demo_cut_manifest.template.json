@@ -1,0 +1,32 @@
+{
+  "system_name": "",
+  "source_video": "",
+  "source_duration": 0,
+  "clips": [
+    {
+      "clip_id": "D01",
+      "title": "STEP1",
+      "source_start": 0,
+      "source_end": 0,
+      "source_duration": 0,
+      "playback_strategy": "speed_up",
+      "playback_rate": 4,
+      "target_duration": 0,
+      "output_file": "02_Demo切分/D01_STEP1.mp4",
+      "scene_usage": "",
+      "voiceover": "",
+      "caption": ""
+    }
+  ],
+  "generation_segment": {
+    "source_start": 0,
+    "source_end": 0,
+    "source_duration": 0,
+    "sample_segments": [],
+    "clean_clip_duration": 0,
+    "target_duration": 5,
+    "effective_playback_rate": 0,
+    "output_file": "02_Demo切分/D04_AI生成过程_clean.mp4"
+  },
+  "excluded_ranges": []
+}
