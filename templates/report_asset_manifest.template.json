@@ -1,0 +1,19 @@
+{
+  "system_name": "",
+  "source_report": "",
+  "assets": [
+    {
+      "asset_id": "R01",
+      "page": 1,
+      "title": "",
+      "source_region": "",
+      "output_file": "03_报告精选素材/R01_xxx.png",
+      "reason": "",
+      "fact_boundary": "",
+      "video_message": "",
+      "voiceover": "",
+      "caption": "",
+      "motion": "slow_zoom"
+    }
+  ]
+}
