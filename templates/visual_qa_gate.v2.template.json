@@ -1,0 +1,28 @@
+{
+  "version": "YIZHI_VISUAL_QA_V2",
+  "must_pass_before_review_url": true,
+  "checks": {
+    "presenter_keyed_asset_used": true,
+    "presenter_green_background_visible": false,
+    "presenter_visible_height_ratio_min": 0.65,
+    "presenter_target_height_ratio": [0.70, 0.78],
+    "laptop_visible_width_ratio": [0.68, 0.74],
+    "demo_clipped_to_screen_mask": true,
+    "demo_pixels_outside_screen_mask": 0,
+    "laptop_bezel_above_demo_layer": true,
+    "unexpected_blank_screen": false,
+    "body_voice_speed": 1.3,
+    "slogan_voice_speed": 1.0,
+    "brand": "易知",
+    "old_brand_visible_in_user_facing_frames": false
+  },
+  "required_runtime_stills": [
+    "opening_presenter",
+    "step1_demo",
+    "step3_demo",
+    "ai_generation_demo",
+    "conclusion_presenter",
+    "brand_close"
+  ],
+  "failure_policy": "任何一项 FAIL，不得返回 Review URL，不得声称完成。"
+}
