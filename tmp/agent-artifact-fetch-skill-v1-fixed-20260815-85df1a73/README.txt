@@ -1,1 +1,0 @@
-Use the ZIP in this directory. Canonical size=4785 bytes; SHA256=85df1a73f9d337a8da365089a27d972fba2fcb91877509bbedf0092b3304d165.
