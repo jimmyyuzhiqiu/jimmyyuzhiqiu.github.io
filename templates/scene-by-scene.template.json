@@ -1,0 +1,23 @@
+{
+  "system_name": "",
+  "fps": 30,
+  "target_duration": 82,
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "start": 0,
+      "end": 5,
+      "duration": 5,
+      "type": "hero",
+      "visual_asset": "",
+      "source_video_start": null,
+      "source_video_end": null,
+      "playback_rate": 1,
+      "presenter": true,
+      "voiceover": "",
+      "caption": "",
+      "animation": "",
+      "transition_out": ""
+    }
+  ]
+}
