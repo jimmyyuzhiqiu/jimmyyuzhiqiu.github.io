@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FBFF"/>
+  <circle cx="1720" cy="100" r="520" fill="#8FB7FF" opacity=".12"/>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif">
+    <text x="120" y="120" font-size="64" font-weight="700" fill="#112442">成果必须大到能看清</text>
+    <text x="120" y="185" font-size="31" fill="#64748B">PPT / 报告 / 图片 / 教学网页优先 85%–95% 大画幅</text>
+  </g>
+  <rect x="105" y="245" width="1710" height="680" rx="38" fill="#FFFFFF" stroke="#DCE7F5" stroke-width="2"/>
+  <rect x="165" y="305" width="1590" height="555" rx="24" fill="#F8FBFF" stroke="#E4ECF7"/>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif">
+    <text x="225" y="382" font-size="52" font-weight="650" fill="#183C70">一次备课，完整产出</text>
+    <text x="225" y="455" font-size="30" fill="#64748B">教案框架   ·   课件大纲   ·   分层作业   ·   随堂检测</text>
+    <g fill="#EEF5FF">
+      <rect x="220" y="535" width="330" height="195" rx="28"/>
+      <rect x="590" y="535" width="330" height="195" rx="28"/>
+      <rect x="960" y="535" width="330" height="195" rx="28"/>
+      <rect x="1330" y="535" width="330" height="195" rx="28"/>
+    </g>
+    <text x="255" y="600" font-size="32" fill="#2563EB">01</text><text x="255" y="665" font-size="32" fill="#23476F">对齐课标</text>
+    <text x="625" y="600" font-size="32" fill="#2563EB">02</text><text x="625" y="665" font-size="32" fill="#23476F">生成教案</text>
+    <text x="995" y="600" font-size="32" fill="#2563EB">03</text><text x="995" y="665" font-size="32" fill="#23476F">配套课件</text>
+    <text x="1365" y="600" font-size="32" fill="#2563EB">04</text><text x="1365" y="665" font-size="32" fill="#23476F">课后回流</text>
+    <text x="120" y="1000" font-size="26" fill="#64748B">REFERENCE 03 · Evidence readability has priority over decorative laptop frame</text>
+  </g>
+</svg>
