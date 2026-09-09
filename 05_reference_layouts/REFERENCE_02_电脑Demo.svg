@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FBFF"/>
+  <circle cx="1660" cy="100" r="500" fill="#8FB7FF" opacity=".15"/>
+  <circle cx="180" cy="970" r="430" fill="#C2AEFF" opacity=".13"/>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif">
+    <text x="95" y="115" font-size="58" font-weight="700" fill="#112442">真实操作必须“进入屏幕”</text>
+    <text x="95" y="175" font-size="32" fill="#64748B">电脑是 Demo 主视觉，不是装饰</text>
+  </g>
+  <g id="presenter-placeholder">
+    <ellipse cx="270" cy="405" rx="92" ry="110" fill="#D7E6FF"/>
+    <path d="M135 965 C150 690 165 565 270 550 C385 565 400 700 420 965 Z" fill="#9BBDF8"/>
+    <text x="195" y="775" font-family="sans-serif" font-size="26" fill="#FFFFFF">KEYED</text>
+    <text x="165" y="810" font-family="sans-serif" font-size="26" fill="#FFFFFF">PRESENTER</text>
+  </g>
+  <g id="laptop">
+    <rect x="525" y="140" width="1300" height="760" rx="55" fill="#DDE6F2" stroke="#B7C6D8" stroke-width="6"/>
+    <rect x="585" y="195" width="1180" height="650" rx="22" fill="#0C1320"/>
+    <rect x="620" y="230" width="1110" height="580" rx="16" fill="#FFFFFF"/>
+    <rect x="620" y="230" width="1110" height="70" rx="16" fill="#F3F7FD"/>
+    <circle cx="665" cy="264" r="9" fill="#FF8B8B"/>
+    <circle cx="695" cy="264" r="9" fill="#FFD17C"/>
+    <circle cx="725" cy="264" r="9" fill="#7BDDA5"/>
+    <text x="790" y="275" font-family="sans-serif" font-size="26" fill="#55647A">云知师AI · 教师工作台</text>
+    <rect x="690" y="350" width="965" height="100" rx="22" fill="#F4F8FF"/>
+    <text x="745" y="412" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="32" fill="#334E73">输入课题、学情和教学目标</text>
+    <rect x="690" y="505" width="965" height="190" rx="22" fill="#F7FAFE"/>
+    <text x="745" y="560" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="31" fill="#2563EB">AI 执行中</text>
+    <text x="745" y="625" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="29" fill="#64748B">教案 → 课件 → 分层作业</text>
+    <rect x="470" y="900" width="1410" height="48" rx="24" fill="#C7D3E2"/>
+  </g>
+  <text x="100" y="1025" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="26" fill="#64748B">Laptop visible width 68%–74% · Presenter demo height ≥65%</text>
+</svg>
