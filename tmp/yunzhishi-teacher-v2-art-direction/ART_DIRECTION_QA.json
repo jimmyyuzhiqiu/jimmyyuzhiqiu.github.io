@@ -1,0 +1,19 @@
+{
+  "blocking": [
+    {"id": "PRIMARY_FOCUS", "fail_if": "single scene has more than 1 primary visual focus"},
+    {"id": "RESULT_READABILITY", "fail_if": "important PPT/report/result is shown too small to read; use 85%-95% canvas width when needed"},
+    {"id": "PRESENTER_SIZE", "fail_if": "main presenter visible height <70% or demo presenter <65%"},
+    {"id": "LAPTOP_SIZE", "fail_if": "demo laptop visible width <68% of canvas"},
+    {"id": "SCREEN_EMBED", "fail_if": "any product UI pixel visibly spills outside laptop screen"},
+    {"id": "CARD_SEA", "fail_if": "3 or more same-style rounded cards compete in one scene"},
+    {"id": "FONT_SIZE", "fail_if": "core text <26px"},
+    {"id": "CAPTION", "fail_if": "caption >2 lines or >18 Chinese characters"},
+    {"id": "MOTION", "fail_if": "bounce/spin/flip/cube/particle/emoji-fly is used"},
+    {"id": "STYLE", "fail_if": "scene resembles PPT/government-report/template collage instead of modern SaaS launch visual"},
+    {"id": "STILL_QA", "fail_if": "S01/S02/S04/S05/S07/S10/S12 stills are not reviewed before Review URL"}
+  ],
+  "requiredStillScenes": ["S01", "S02", "S04", "S05", "S07", "S10", "S12"],
+  "passLanguage": ["干净", "高级", "现代", "专业", "教育科技", "产品感", "SaaS发布片"],
+  "failLanguage": ["PPT", "企业宣传模板", "信息图拼贴", "政府汇报", "卡片海"],
+  "statusRule": "Any blocking FAIL => do not issue Review URL; revise first."
+}
