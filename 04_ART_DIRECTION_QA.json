@@ -1,0 +1,20 @@
+{
+  "blocking_gates": [
+    {"id":"PRIMARY_FOCUS","test":"single scene has exactly one primary visual focus","fail_if":"more than one primary visual competes for attention"},
+    {"id":"PRESENTER_SIZE","test":"presenter visible bbox is 70%-78% in presenter scenes and >=65% in demo scenes","fail_if":"presenter looks like a corner sticker"},
+    {"id":"LAPTOP_SIZE","test":"visible laptop subject is 68%-74% of frame width in laptop demo scenes","fail_if":"computer or UI is too small to read"},
+    {"id":"SCREEN_CLIP","test":"demo pixels are clipped inside calibrated laptop screen","fail_if":"browser or product pixels spill outside the bezel"},
+    {"id":"RESULT_READABILITY","test":"PPT/report/image/web result is shown at 85%-95% frame width when needed","fail_if":"important content becomes unreadable due to small layout"},
+    {"id":"CARD_SEA","test":"no more than 2 same-style rounded cards in one scene","fail_if":"3 or more same-style cards compete in one screen"},
+    {"id":"FONT_SIZE","test":"all core text is >=26px","fail_if":"core text below 26px"},
+    {"id":"CAPTION","test":"semantic caption <=2 lines and <=18 Chinese characters","fail_if":"long transcript-like subtitle appears"},
+    {"id":"MOTION","test":"only restrained SaaS motion language is used","fail_if":"bounce/spin/flip/cube/particle/emoji-fly appears"},
+    {"id":"STYLE","test":"still looks like modern AI SaaS product launch","fail_if":"still resembles PPT, government report, card collage or generic corporate template"},
+    {"id":"SOURCE_AUDIO","test":"all source recordings are muted","fail_if":"original screen-recording narration is audible"},
+    {"id":"VOICE","test":"female body VO is effective 1.3x and brand close 1.0x","fail_if":"wrong gender or speed"}
+  ],
+  "required_stills": ["S01", "S02", "S04", "S05", "S07", "S10", "S12"],
+  "pass_language": ["干净", "高级", "现代", "专业", "教育科技", "有产品感", "像SaaS发布片"],
+  "fail_language": ["PPT", "企业宣传模板", "信息图拼贴", "政府汇报", "卡片海"],
+  "status_rule": "ANY blocking gate FAIL => ART_DIRECTION_QA=FAIL => do not return Review URL"
+}
