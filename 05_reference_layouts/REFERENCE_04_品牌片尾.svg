@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <radialGradient id="blue"><stop offset="0" stop-color="#86B1FF" stop-opacity=".20"/><stop offset="1" stop-color="#86B1FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="purple"><stop offset="0" stop-color="#C0ADFF" stop-opacity=".17"/><stop offset="1" stop-color="#C0ADFF" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="#FAFCFF"/>
+  <circle cx="1510" cy="200" r="540" fill="url(#blue)"/>
+  <circle cx="360" cy="900" r="470" fill="url(#purple)"/>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle">
+    <text x="960" y="390" font-size="94" font-weight="700" fill="#2563EB">云知师AI</text>
+    <text x="960" y="520" font-size="46" font-weight="600" fill="#203A60">把重复劳动交给 AI，</text>
+    <text x="960" y="590" font-size="46" font-weight="600" fill="#203A60">把时间真正留给课堂。</text>
+    <text x="960" y="700" font-size="30" fill="#64748B">教师版 · AI 教学助手</text>
+    <text x="960" y="970" font-size="24" fill="#8A99AE">REFERENCE 04 · Minimal brand close</text>
+  </g>
+</svg>
