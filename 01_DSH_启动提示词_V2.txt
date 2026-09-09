@@ -1,0 +1,1 @@
+请使用V1半成品包+本V2视觉升级包制作云知师AI教师版视频。优先读取：00_MASTER_PROMPT_V2.md、ART_DIRECTION_LOCK_V2.md、design_tokens.json、ART_DIRECTION_QA.json、参考构图下5张SVG；再读取V1已有的产品定位、source_cut_manifest、scene-by-scene、voiceover和Remotion说明。V2只覆盖视觉导演，不改变已确认事实、时间码和口播逻辑。硬规则：一屏一个重点；数字人70%–78%高，Demo>=65%；电脑68%–74%宽；成果85%–95%大画幅；禁止卡片海、小字和模板动效；Review前必须Render Still做Art Direction QA。

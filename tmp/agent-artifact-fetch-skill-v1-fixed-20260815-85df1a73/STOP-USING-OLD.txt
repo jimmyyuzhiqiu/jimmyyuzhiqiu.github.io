@@ -1,1 +1,0 @@
-Do not use tmp/agent-artifact-fetch-skill-v1-20260815-85df1a73 from commit 787c9c...; that ZIP is truncated.
