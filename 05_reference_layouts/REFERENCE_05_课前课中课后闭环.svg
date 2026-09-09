@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FBFF"/>
+  <circle cx="1670" cy="120" r="500" fill="#8FB7FF" opacity=".12"/>
+  <circle cx="190" cy="930" r="430" fill="#C2AEFF" opacity=".11"/>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif">
+    <text x="120" y="135" font-size="72" font-weight="700" fill="#112442">一堂课，持续进化</text>
+    <text x="120" y="205" font-size="31" fill="#64748B">把整片的隐藏视觉主线做成：课前 → 课中 → 课后 → 下一课</text>
+  </g>
+  <g stroke="#78A9F4" stroke-width="8" fill="none">
+    <path d="M310 570 C520 570 540 570 690 570"/>
+    <path d="M770 570 C960 570 970 570 1130 570"/>
+    <path d="M1210 570 C1400 570 1410 570 1570 570"/>
+    <path d="M1650 625 C1640 820 1270 890 1010 885 C740 880 430 820 300 650" opacity=".45"/>
+  </g>
+  <g font-family="PingFang SC,Microsoft YaHei,Noto Sans CJK SC,sans-serif" text-anchor="middle">
+    <g><circle cx="270" cy="570" r="70" fill="#FFFFFF" stroke="#4F91F2" stroke-width="8"/><text x="270" y="505" font-size="42" fill="#1E4F91">课前</text><text x="270" y="685" font-size="29" fill="#64748B">备课与产出</text></g>
+    <g><circle cx="730" cy="570" r="70" fill="#FFFFFF" stroke="#4F91F2" stroke-width="8"/><text x="730" y="505" font-size="42" fill="#1E4F91">课中</text><text x="730" y="685" font-size="29" fill="#64748B">素材与互动</text></g>
+    <g><circle cx="1170" cy="570" r="70" fill="#FFFFFF" stroke="#4F91F2" stroke-width="8"/><text x="1170" y="505" font-size="42" fill="#1E4F91">课后</text><text x="1170" y="685" font-size="29" fill="#64748B">分析与反馈</text></g>
+    <g><circle cx="1610" cy="570" r="70" fill="#FFFFFF" stroke="#4F91F2" stroke-width="8"/><text x="1610" y="505" font-size="42" fill="#1E4F91">下一课</text><text x="1610" y="685" font-size="29" fill="#64748B">数据回流</text></g>
+    <text x="960" y="950" font-size="28" fill="#64748B">让每一堂课，都能在上一堂课的基础上继续进化</text>
+  </g>
+</svg>
