@@ -1,0 +1,44 @@
+{
+  "canvas": {"width": 1920, "height": 1080, "fps": 30},
+  "safe_area": {"left": 96, "right": 96, "top": 72, "bottom": 80},
+  "palette": {
+    "background": "#F8FBFF",
+    "primary_blue": "#2563EB",
+    "secondary_blue": "#6EA8FF",
+    "lavender": "#B9A7FF",
+    "text_primary": "#112442",
+    "text_secondary": "#64748B",
+    "border": "#DCE7F5",
+    "card": "rgba(255,255,255,0.90)"
+  },
+  "typography": {
+    "font_family": ["PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "sans-serif"],
+    "hero_title_px": [72, 88],
+    "scene_title_px": [48, 58],
+    "core_keyword_px": [56, 72],
+    "support_text_px": [28, 34],
+    "semantic_caption_px": [34, 40],
+    "minimum_core_text_px": 26,
+    "max_hierarchy_levels": 3
+  },
+  "shape": {
+    "large_radius_px": [28, 36],
+    "small_radius_px": [14, 18],
+    "border_width_px": 1,
+    "shadow": "soft ambient only"
+  },
+  "composition": {
+    "max_primary_focus": 1,
+    "max_secondary_support": 1,
+    "presenter_visible_height_ratio": [0.70, 0.78],
+    "presenter_demo_min_height_ratio": 0.65,
+    "laptop_visible_width_ratio": [0.68, 0.74],
+    "fullscreen_evidence_width_ratio": [0.85, 0.95],
+    "same_style_cards_max": 2
+  },
+  "caption": {"max_chinese_chars": 18, "max_lines": 2},
+  "motion": {
+    "allowed": ["cameraPushIn", "cameraPullOut", "maskReveal", "blurDissolve", "sharedElement", "softScale", "lineDraw", "contentExpand", "numberCountUp", "viewportPan"],
+    "forbidden": ["bounce", "spin", "flip3d", "cube", "venetianBlinds", "pageTurn", "particleExplosion", "emojiFly"]
+  }
+}
